@@ -1,120 +1,142 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meisterbetrieb Tomislav Mamić</title>
-    <meta name="description" content="Meisterbetrieb Tomislav Mamić – Ihr Profi für Gas, Wasser und Heizung in Pirmasens.">
-    <meta name="keywords" content="Gasinstallation, Wasserinstallation, Heizung, Sanitär, Pirmasens, Handwerker, Tomislav Mamić">
-    <meta name="author" content="Tomislav Mamić">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
-        header { background-color: white; padding: 20px; text-align: center; }
-        header img { max-width: 250px; margin-bottom: 15px; }
-        header h1 { font-size: 2.5em; margin: 10px 0; color: #333; }
-        header p { font-size: 1.2em; margin: 0; }
-        header::after { content: ''; display: block; width: 100%; height: 4px; background-color: lightblue; margin-top: 10px; }
-        nav { background-color: #333; text-align: center; padding: 15px 0; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1.1em; transition: color 0.3s; }
-        nav a:hover { color: lightblue; }
-        section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
-        section h2 { font-size: 2em; margin-bottom: 20px; color: #007BFF; }
-        .services { display: flex; justify-content: space-between; flex-wrap: wrap; }
-        .service { flex: 1 1 calc(30% - 20px); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 20px; margin: 10px; border-radius: 5px; text-align: center; background-color: #fff; transition: transform 0.3s, box-shadow 0.3s; }
-        .service:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-        .service h3 { font-size: 1.5em; margin-bottom: 10px; }
-        @media (max-width: 768px) { .service { flex: 1 1 100%; } }
-        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
-        footer p { margin: 0; }
-        #logo-banner { display: flex; justify-content: center; align-items: center; background-color: #f4f4f4; padding: 20px 0; margin-top: 20px; }
-        #logo-banner img { max-height: 100px; margin-right: 20px; }
-        #logo-banner .details { text-align: left; }
-        #logo-banner .details p { margin: 5px 0; font-size: 1.1em; }
-        iframe { border: none; border-radius: 10px; }
-        .cta-button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; border-radius: 5px; text-decoration: none; margin-top: 20px; }
-        .cta-button:hover { background-color: #0056b3; }
-        form { display: flex; flex-direction: column; }
-        form input, form textarea { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meisterbetrieb Tomislav Mamić</title>
+  <meta name="description" content="Meisterbetrieb Tomislav Mamić – Ihr Profi für Gas, Wasser und Heizung in Pirmasens." />
+  <meta name="keywords" content="Gasinstallation, Wasserinstallation, Heizung, Sanitär, Pirmasens, Handwerker, Tomislav Mamić" />
+  <meta name="author" content="Tomislav Mamić" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+    header { background-color: white; padding: 20px; text-align: center; }
+    header img { max-width: 250px; margin-bottom: 15px; }
+    header h1 { font-size: 2.5em; margin: 10px 0; color: #333; }
+    header p { font-size: 1.2em; margin: 0; }
+    header::after { content: ''; display: block; width: 100%; height: 4px; background-color: lightblue; margin-top: 10px; }
+    nav { background-color: #333; text-align: center; padding: 15px 0; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1.1em; transition: color 0.3s; }
+    nav a:hover { color: lightblue; }
+    section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+    section h2 { font-size: 2em; margin-bottom: 20px; color: #007BFF; }
+    .services { display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .service { flex: 1 1 calc(30% - 20px); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 20px; margin: 10px; border-radius: 5px; text-align: center; background-color: #fff; transition: transform 0.3s, box-shadow 0.3s; }
+    .service:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+    .service h3 { font-size: 1.5em; margin-bottom: 10px; }
+    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    footer p { margin: 0; }
+    #logo-banner { display: flex; justify-content: center; align-items: center; background-color: #f4f4f4; padding: 20px 0; margin-top: 20px; }
+    #logo-banner img { max-height: 100px; margin-right: 20px; }
+    #logo-banner .details { text-align: left; }
+    #logo-banner .details p { margin: 5px 0; font-size: 1.1em; }
+    iframe { border: none; border-radius: 10px; }
+    .cta-button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; border-radius: 5px; text-decoration: none; margin-top: 20px; }
+    .cta-button:hover { background-color: #0056b3; }
+    form { display: flex; flex-direction: column; }
+    form input, form textarea { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
+    .gallery img { max-width: 32%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .gallery img:hover { transform: scale(1.03); }
+    .info-box { background-color: #e6f4ff; padding: 25px; border-left: 5px solid #007BFF; margin-top: 40px; border-radius: 8px; }
+    .info-box p { margin: 10px 0; }
+    .kfw-link { text-align: center; margin-top: 30px; }
+    .kfw-link a { font-weight: bold; color: #007BFF; font-size: 1.1em; text-decoration: none; }
+    .kfw-link a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="assets/Logo.png" alt="Firmenlogo von Meisterbetrieb Tomislav Mamić – Gas, Wasser, Heizung">
-        <h1>Meisterbetrieb Tomislav Mamić</h1>
-        <p>Gas - Wasser - Heizung</p>
-    </header>
+  <header>
+    <img src="assets/Logo.png" alt="Firmenlogo von Meisterbetrieb Tomislav Mamić – Gas, Wasser, Heizung">
+    <h1>Meisterbetrieb Tomislav Mamić</h1>
+    <p>Gas - Wasser - Heizung</p>
+  </header>
 
-    <nav>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#kontakt">Kontakt</a>
-        <a href="#standort">Standort</a>
-    </nav>
+  <nav>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#standort">Standort</a>
+  </nav>
 
-    <section id="logo-banner">
-        <img src="assets/Logo.png" alt="Logo von Meisterbetrieb Mamić">
-        <div class="details">
-            <p><strong>Adresse:</strong> Am Häusel 122a, Pirmasens</p>
-            <p><strong>Telefon:</strong> 06331 144 319 | 0176 388 41 309</p>
-            <p><strong>Email:</strong> tomas.mamic@gmx.de</p>
-        </div>
-    </section>
+  <section id="logo-banner">
+    <img src="assets/Logo.png" alt="Logo von Meisterbetrieb Mamić">
+    <div class="details">
+      <p><strong>Adresse:</strong> Am Häusel 122a, Pirmasens</p>
+      <p><strong>Telefon:</strong> 06331 144 319 | 0176 388 41 309</p>
+      <p><strong>Email:</strong> tomas.mamic@gmx.de</p>
+    </div>
+  </section>
 
-<section id="leistungen">
+  <section id="leistungen">
     <h2>Unsere Leistungen</h2>
     <div class="services">
-        <div class="service">
-            <h3>Gasinstallationen</h3>
-            <p>Sichere und professionelle Installation von Gasleitungen und Geräten.</p>
-            <img src="assets/bild6.JPG" alt="Gasinstallation" style="width: 100%; margin-top: 10px; border-radius: 8px;">
-        </div>
-        <div class="service">
-            <h3>Wasserinstallationen</h3>
-            <p>Von Sanitäranlagen bis zur Rohrverlegung, wir bieten umfassende Lösungen.</p>
-        </div>
-        <div class="service">
-            <h3>Heizungsbau</h3>
-            <p>Effiziente und moderne Heizsysteme für Ihr Zuhause.</p>
-        </div>
+      <div class="service">
+        <h3>Gasinstallationen</h3>
+        <p>Sichere und professionelle Installation von Gasleitungen und Geräten.</p>
+        <img src="assets/bild6.JPG" alt="Gasinstallation" style="width: 100%; margin-top: 10px; border-radius: 8px;">
+      </div>
+      <div class="service">
+        <h3>Wasserinstallationen</h3>
+        <p>Von Sanitäranlagen bis zur Rohrverlegung, wir bieten umfassende Lösungen.</p>
+      </div>
+      <div class="service">
+        <h3>Heizungsbau</h3>
+        <p>Effiziente und moderne Heizsysteme für Ihr Zuhause.</p>
+      </div>
     </div>
-    <a href="#kontakt" class="cta-button">Jetzt Kontakt aufnehmen</a>
 
     <div class="gallery">
-        <img src="assets/bild1.JPG" alt="Modernes Bad Dusche">
-        <img src="assets/bild2.JPG" alt="Helles Bad Quer">
-        <img src="assets/bild3.JPG" alt="Dunkles Bad mit Licht">
-        <img src="assets/bild4.JPG" alt="WC mit schwarzer Wand">
-        <img src="assets/bild5.JPG" alt="Langes Bad mit Wanne">
+      <img src="assets/bild1.JPG" alt="Modernes Bad Dusche">
+      <img src="assets/bild2.JPG" alt="Helles Bad Quer">
+      <img src="assets/bild3.JPG" alt="Dunkles Bad mit Licht">
+      <img src="assets/bild4.JPG" alt="WC mit schwarzer Wand">
+      <img src="assets/bild5.JPG" alt="Langes Bad mit Wanne">
     </div>
-</section>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <form action="https://formsubmit.co/tomas.mamic@gmx.de" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="info-box">
+      <h3>Unsere Leistungen und Produkte</h3>
+      <p><strong>Heizungsbau:</strong> Wir bieten Standardlösungen für Ihre Heizungsanlage, individuelle Konzepte und Anpassungen!</p>
+      <p><strong>Heizungspumpenaustausch:</strong> Eine Hocheffizienzpumpe spart jährlich bis zu 120 EUR Stromkosten – gut für Umwelt und Geldbeutel!</p>
+      <p><strong>Brennwert- & Niedertemperaturheizungen:</strong> Gas- oder Ölbrennwertheizung, moderne Lösungen für mehr Effizienz.</p>
+      <p><strong>Bad & Sanitär:</strong> Komplettbäder, individuelle Sanitärlösungen, Haustechnik & alternative Konzepte.</p>
+      <p><strong>Solar & regenerative Energie:</strong> Wir beraten zu Photovoltaik, Batteriespeichern, BHKW, Luftwärmepumpen & Finanzierung.</p>
+      <p><strong>Kundendienst:</strong> Umfangreicher Service & Hotline – auch über die gesetzliche Gewährleistung hinaus.</p>
+    </div>
 
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+    <div class="kfw-link">
+      <a href="https://www.kfw.de/kfw.de.html?kfwmc=KOM.Adwords.Corporate2013.C_KfWBRAND.KfWKredit/" target="_blank">
+        ➤ Infos zur KfW-Förderung hier abrufen
+      </a>
+    </div>
 
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+    <a href="#kontakt" class="cta-button">Jetzt Kontakt aufnehmen</a>
+  </section>
 
-            <button type="submit" class="cta-button">Nachricht senden</button>
-        </form>
-    </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form action="https://formsubmit.co/tomas.mamic@gmx.de" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-    <section id="standort">
-        <h2>Unser Standort</h2>
-        <p>Finden Sie uns hier:</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.7346802401436!2d7.612085915741002!3d49.199802079326084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479628c088ed2cf5%3A0x3c0c88b340dbf94d!2sAm%20H%C3%A4usel%20122a%2C%2066994%20Pirmasens!5e0!3m2!1sde!2sde!4v1713862370000"
-            width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
 
-    <footer>
-        <p>&copy; 2025 Meisterbetrieb Tomislav Mamić - Alle Rechte vorbehalten.</p>
-    </footer>
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="cta-button">Nachricht senden</button>
+    </form>
+  </section>
+
+  <section id="standort">
+    <h2>Unser Standort</h2>
+    <p>Finden Sie uns hier:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.7346802401436!2d7.612085915741002!3d49.199802079326084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479628c088ed2cf5%3A0x3c0c88b340dbf94d!2sAm%20H%C3%A4usel%20122a%2C%2066994%20Pirmasens!5e0!3m2!1sde!2sde!4v1713862370000" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meisterbetrieb Tomislav Mamić - Alle Rechte vorbehalten.</p>
+  </footer>
 </body>
 </html>
