@@ -35,9 +35,11 @@
     .cta-button:hover { background-color: #0056b3; }
     form { display: flex; flex-direction: column; }
     form input, form textarea { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
-    .gallery img { max-width: 32%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-    .gallery img:hover { transform: scale(1.03); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+    .gallery figure { margin: 0; overflow: hidden; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .gallery img { width: 100%; height: auto; display: block; transition: transform 0.4s ease; }
+    .gallery figure:hover img { transform: scale(1.05); }
+    .gallery figcaption { padding: 10px; font-size: 0.95em; color: #555; text-align: center; }
     .info-box { background-color: #e6f4ff; padding: 25px; border-left: 5px solid #007BFF; margin-top: 40px; border-radius: 8px; }
     .info-box p { margin: 10px 0; }
     .kfw-link { text-align: center; margin-top: 30px; }
@@ -61,7 +63,7 @@
   <section id="logo-banner">
     <img src="assets/Logo.png" alt="Logo von Meisterbetrieb Mamić">
     <div class="details">
-      <p><strong>Adresse:</strong> Am Häusel 122a, Pirmasens</p>
+      <p><strong>Adresse:</strong> Am Häusel 122, Pirmasens</p>
       <p><strong>Telefon:</strong> 06331 144 319 | 0176 388 41 309</p>
       <p><strong>Email:</strong> tomas.mamic@gmx.de</p>
     </div>
@@ -76,21 +78,22 @@
         <img src="assets/bild6.JPG" alt="Gasinstallation" style="width: 100%; margin-top: 10px; border-radius: 8px;">
       </div>
       <div class="service">
-        <h3>Wasserinstallationen</h3>
-        <p>Von Sanitäranlagen bis zur Rohrverlegung, wir bieten umfassende Lösungen.</p>
+        <h3>Sanitär & Wasser</h3>
+        <p>Moderne Bäder, nachhaltige Rohrverlegung und individuelle Lösungen für Ihre Sanitäranlagen.</p>
       </div>
       <div class="service">
         <h3>Heizungsbau</h3>
         <p>Effiziente und moderne Heizsysteme für Ihr Zuhause.</p>
+        <img src="assets/bild7.JPG" alt="Heizungsanlage" style="width: 100%; margin-top: 10px; border-radius: 8px;">
       </div>
     </div>
 
     <div class="gallery">
-      <img src="assets/bild1.JPG" alt="Modernes Bad Dusche">
-      <img src="assets/bild2.JPG" alt="Helles Bad Quer">
-      <img src="assets/bild3.JPG" alt="Dunkles Bad mit Licht">
-      <img src="assets/bild4.JPG" alt="WC mit schwarzer Wand">
-      <img src="assets/bild5.JPG" alt="Langes Bad mit Wanne">
+      <figure><img src="assets/bild1.JPG" alt="Modernes Bad Dusche"><figcaption>Modernes Bad mit Dusche</figcaption></figure>
+      <figure><img src="assets/bild2.JPG" alt="Helles Bad Quer"><figcaption>Helles Bad mit Wanne</figcaption></figure>
+      <figure><img src="assets/bild3.JPG" alt="Dunkles Bad mit Licht"><figcaption>Stilvolles Bad mit LED-Licht</figcaption></figure>
+      <figure><img src="assets/bild4.JPG" alt="WC mit schwarzer Wand"><figcaption>Modernes WC</figcaption></figure>
+      <figure><img src="assets/bild5.JPG" alt="Langes Bad mit Wanne"><figcaption>Langes Badezimmer</figcaption></figure>
     </div>
 
     <div class="info-box">
@@ -139,5 +142,7 @@
     <p>&copy; 2025 Meisterbetrieb Tomislav Mamić - Alle Rechte vorbehalten.</p>
   </footer>
 </body>
+</html>
+
 </html>
 
