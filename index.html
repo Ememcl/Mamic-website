@@ -3,142 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meisterbetrieb Tomislav Mamić</title>
-  <meta name="description" content="Meisterbetrieb Tomislav Mamić – Ihr Profi für Gas, Wasser und Heizung in Pirmasens." />
-  <meta name="keywords" content="Gasinstallation, Wasserinstallation, Heizung, Sanitär, Pirmasens, Handwerker, Tomislav Mamić" />
-  <meta name="author" content="Tomislav Mamić" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
-    header { background-color: white; padding: 20px; text-align: center; }
-    header img { max-width: 250px; margin-bottom: 15px; }
-    header h1 { font-size: 2.5em; margin: 10px 0; color: #333; }
-    header p { font-size: 1.2em; margin: 0; }
-    header::after { content: ''; display: block; width: 100%; height: 4px; background-color: lightblue; margin-top: 10px; }
-    nav { background-color: #333; text-align: center; padding: 15px 0; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1.1em; transition: color 0.3s; }
-    nav a:hover { color: lightblue; }
-    section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
-    section h2 { font-size: 2em; margin-bottom: 20px; color: #007BFF; }
-    .services { display: flex; justify-content: space-between; flex-wrap: wrap; }
-    .service { flex: 1 1 calc(30% - 20px); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 20px; margin: 10px; border-radius: 5px; text-align: center; background-color: #fff; transition: transform 0.3s, box-shadow 0.3s; }
-    .service:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-    .service h3 { font-size: 1.5em; margin-bottom: 10px; }
-    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
-    footer p { margin: 0; }
-    #logo-banner { display: flex; justify-content: center; align-items: center; background-color: #f4f4f4; padding: 20px 0; margin-top: 20px; }
-    #logo-banner img { max-height: 100px; margin-right: 20px; }
-    #logo-banner .details { text-align: left; }
-    #logo-banner .details p { margin: 5px 0; font-size: 1.1em; }
-    iframe { border: none; border-radius: 10px; }
-    .cta-button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; border-radius: 5px; text-decoration: none; margin-top: 20px; }
-    .cta-button:hover { background-color: #0056b3; }
-    form { display: flex; flex-direction: column; }
-    form input, form textarea { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
-    .gallery img { max-width: 32%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-    .gallery img:hover { transform: scale(1.03); }
-    .info-box { background-color: #e6f4ff; padding: 25px; border-left: 5px solid #007BFF; margin-top: 40px; border-radius: 8px; }
-    .info-box p { margin: 10px 0; }
-    .kfw-link { text-align: center; margin-top: 30px; }
-    .kfw-link a { font-weight: bold; color: #007BFF; font-size: 1.1em; text-decoration: none; }
-    .kfw-link a:hover { text-decoration: underline; }
-  </style>
+
+  <title>Meisterbetrieb Mamić | Gas · Wasser · Heizung</title>
+  <meta name="description" content="Meisterbetrieb Mamić in Pirmasens – Gas, Wasser und Heizung. Moderne Sanitärinstallationen, Heizungsbau, Gasinstallationen, Badmodernisierung und Kundendienst." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="assets/Logo.png" alt="Firmenlogo von Meisterbetrieb Tomislav Mamić – Gas, Wasser, Heizung">
-    <h1>Meisterbetrieb Tomislav Mamić</h1>
-    <p>Gas - Wasser - Heizung</p>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo-neu.png" alt="Logo Meisterbetrieb Mamić" class="brand-logo">
+
+        <div class="brand-text">
+          <span class="brand-title">Meisterbetrieb Mamić</span>
+          <span class="brand-subtitle">Gas · Wasser · Heizung</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#standort">Standort</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#standort">Standort</a>
-  </nav>
+  <main id="top">
+    <section class="hero" id="top">
+      <div class="hero-overlay"></div>
 
-  <section id="logo-banner">
-    <img src="assets/Logo.png" alt="Logo von Meisterbetrieb Mamić">
-    <div class="details">
-      <p><strong>Adresse:</strong> Am Häusel 122a, Pirmasens</p>
-      <p><strong>Telefon:</strong> 06331 144 319 | 0176 388 41 309</p>
-      <p><strong>Email:</strong> tomas.mamic@gmx.de</p>
-    </div>
-  </section>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-badge">Pirmasens & Umgebung</div>
 
-  <section id="leistungen">
-    <h2>Unsere Leistungen</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Gasinstallationen</h3>
-        <p>Sichere und professionelle Installation von Gasleitungen und Geräten.</p>
-        <img src="assets/bild6.JPG" alt="Gasinstallation" style="width: 100%; margin-top: 10px; border-radius: 8px;">
+          <h1>Moderne Lösungen für Gas, Wasser und Heizung</h1>
+
+          <p>
+            Fachgerechte Installationen, zuverlässiger Kundendienst und moderne
+            Sanitär- und Heiztechnik für private und gewerbliche Kunden.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
+            <a href="tel:+496331144319" class="btn btn-secondary">06331 144 319</a>
+          </div>
+        </div>
       </div>
-      <div class="service">
-        <h3>Heizungsbau</h3>
-        <p>Effiziente und moderne Heizsysteme für Ihr Zuhause.</p>
-        <img src="assets/bild7.jpg" alt="Gasinstallation" style="width: 100%; margin-top: 10px; border-radius: 8px;">
+    </section>
+
+    <section class="section intro">
+      <div class="container intro-grid">
+        <div>
+          <h2>Ihr Meisterbetrieb in Pirmasens</h2>
+          <p>
+            Meisterbetrieb Mamić steht für saubere Ausführung, moderne Technik und
+            zuverlässige Betreuung rund um Sanitär, Heizung und Gasinstallation.
+          </p>
+          <p>
+            Von der einzelnen Installation bis zur kompletten Modernisierung bieten
+            wir fachgerechte Lösungen, abgestimmt auf Gebäude, Bedarf und Budget.
+          </p>
+        </div>
+
+        <div class="info-panel">
+          <h3>Direktkontakt</h3>
+          <ul>
+            <li><strong>Adresse:</strong> Am Häusel 122a, Pirmasens</li>
+            <li><strong>Telefon:</strong> 06331 144 319</li>
+            <li><strong>Mobil:</strong> 0176 388 41 309</li>
+            <li><strong>E-Mail:</strong> tomas.mamic@gmx.de</li>
+          </ul>
+        </div>
       </div>
-      <div class="service">
-        <h3>Wasserinstallationen</h3>
-        <p>Von Sanitäranlagen bis zur Rohrverlegung, wir bieten umfassende Lösungen.</p>
+    </section>
+
+    <section id="leistungen" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Leistungen</span>
+          <h2>Unsere Fachbereiche</h2>
+          <p>
+            Von klassischen Installationsarbeiten bis zu modernen energetischen Lösungen.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service-card">
+            <img src="assets/bild3.png" alt="Gasinstallation">
+            <div class="service-card-content">
+              <h3>Gasinstallationen</h3>
+              <p>
+                Sichere und fachgerechte Installation von Gasleitungen,
+                Gasgeräten und zugehöriger Technik.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="assets/bild2.png" alt="Heizungsbau">
+            <div class="service-card-content">
+              <h3>Heizungsbau</h3>
+              <p>
+                Moderne Heizsysteme und individuelle
+                Lösungen für effiziente Wärmeversorgung.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="assets/bild1.png" alt="Sanitärinstallation und Badmodernisierung">
+            <div class="service-card-content">
+              <h3>Sanitär & Bad</h3>
+              <p>
+                Wasserinstallationen, Sanitäranlagen und komplette
+                Badmodernisierung mit modernem Anspruch.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Leistungen & Produkte</span>
+          <h2>Was wir darüber hinaus anbieten</h2>
+          <p>
+            Ergänzend zu den Kernleistungen umfasst unser Angebot weitere wichtige Bereiche.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <h3>Heizungspumpenaustausch</h3>
+            <p>
+              Austausch gegen moderne Hocheffizienzpumpen zur Reduzierung des Stromverbrauchs
+              und zur Verbesserung der Anlagenleistung.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Brennwert- & Niedertemperaturheizungen</h3>
+            <p>
+              Effiziente Heizlösungen für Gas und Öl mit zeitgemäßer Technik
+              und Fokus auf Wirtschaftlichkeit.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Bad & Sanitär</h3>
+            <p>
+              Individuelle Sanitärlösungen, Komplettbäder und technische
+              Anpassungen für Neubau und Modernisierung.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Solar & regenerative Energie</h3>
+            <p>
+              Beratung zu Photovoltaik, Batteriespeichern, BHKW,
+              Luftwärmepumpen und möglichen Finanzierungslösungen.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Kundendienst</h3>
+            <p>
+              Zuverlässiger Service und Unterstützung auch über
+              die reine Ausführung hinaus.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h3>Individuelle Konzepte</h3>
+            <p>
+              Standardlösungen, Anpassungen und auf das Objekt abgestimmte
+              Konzepte für Heizung, Wasser und Haustechnik.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <h3>Fördermöglichkeiten im Blick behalten</h3>
+            <p>
+              Informationen zu Förderungen und Programmen können bei Modernisierungen
+              und energetischen Maßnahmen eine wichtige Rolle spielen.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="https://www.kfw.de/kfw.de.html?kfwmc=KOM.Adwords.Corporate2013.C_KfWBRAND.KfWKredit/" target="_blank" rel="noopener">
+            KfW-Informationen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Projekte</span>
+          <h2>Einblicke in unsere Arbeit</h2>
+          <p>
+            Einige ausgewählte Arbeiten aus den Bereichen Sanitär, Heizung und Installation.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item gallery-large">
+            <img src="assets/bild1.png" alt="Modernes Badezimmer mit bodengleicher Dusche">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/bild5.png" alt="Waschplatz und Duschbereich">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/bild4.png" alt="WC-Bereich mit moderner Fliesenoptik">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/bild3.png" alt="Installation und Technikbereich">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/bild2.png" alt="Heizungsanlage im Innenraum">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section section-contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Kontaktieren Sie uns</h2>
+          <p>
+            Für Anfragen, Beratung oder Terminabsprachen erreichen Sie uns telefonisch oder per E-Mail.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Kontaktdaten</h3>
+            <ul class="contact-list">
+              <li><strong>Meisterbetrieb Mamić</strong></li>
+              <li>Am Häusel 122a</li>
+              <li>66953 Pirmasens</li>
+              <li><a href="tel:+496331144319">06331 144 319</a></li>
+              <li><a href="tel:+4917638841309">0176 388 41 309</a></li>
+              <li><a href="mailto:tomas.mamic@gmx.de">tomas.mamic@gmx.de</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Kontaktformular</h3>
+            <form action="https://formsubmit.co/sanitaermamic@gmail.com" method="POST" class="contact-form">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
+              <input type="text" name="_honey" style="display:none">
+
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="E-Mail" required>
+              <textarea name="message" rows="6" placeholder="Ihre Nachricht" required></textarea>
+
+              <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="standort" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Standort</span>
+          <h2>Unser Standort</h2>
+          <p>
+            Sie finden uns in Pirmasens.
+          </p>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.3684443454794!2d7.6236250796181375!3d49.21838052886192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47967ba3b6beedc5%3A0xe1fe8d7981aab1dc!2sAm%20H%C3%A4usel%20122%2C%2066953%20Pirmasens!5e0!3m2!1sde!2sde!4v1745437515802!5m2!1sde!2sde"
+            width="100%"
+            height="380"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Standort Meisterbetrieb Mamić">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <img src="assets/logo-neu.png" alt="Logo Meisterbetrieb Mamić">
+
+        <div>
+          <strong>Meisterbetrieb Mamić</strong>
+          <span>Gas · Wasser · Heizung</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+
     </div>
-
-    <div class="gallery">
-      <img src="assets/bild1.JPG">
-      <img src="assets/bild2.JPG">
-      <img src="assets/bild3.JPG">
-      <img src="assets/bild4.JPG">
-      <img src="assets/bild5.JPG">
-    </div>
-
-    <div class="info-box">
-      <h3>Unsere Leistungen und Produkte</h3>
-      <p><strong>Heizungsbau:</strong> Wir bieten Standardlösungen für Ihre Heizungsanlage, individuelle Konzepte und Anpassungen!</p>
-      <p><strong>Heizungspumpenaustausch:</strong> Eine Hocheffizienzpumpe spart jährlich bis zu 120 EUR Stromkosten – gut für Umwelt und Geldbeutel!</p>
-      <p><strong>Brennwert- & Niedertemperaturheizungen:</strong> Gas- oder Ölbrennwertheizung, moderne Lösungen für mehr Effizienz.</p>
-      <p><strong>Bad & Sanitär:</strong> Komplettbäder, individuelle Sanitärlösungen, Haustechnik & alternative Konzepte.</p>
-      <p><strong>Solar & regenerative Energie:</strong> Wir beraten zu Photovoltaik, Batteriespeichern, BHKW, Luftwärmepumpen & Finanzierung.</p>
-      <p><strong>Kundendienst:</strong> Umfangreicher Service & Hotline – auch über die gesetzliche Gewährleistung hinaus.</p>
-    </div>
-
-    <div class="kfw-link">
-      <a href="https://www.kfw.de/kfw.de.html?kfwmc=KOM.Adwords.Corporate2013.C_KfWBRAND.KfWKredit/" target="_blank">
-        ➤ Infos zur KfW-Förderung hier abrufen
-      </a>
-    </div>
-
-    <a href="#kontakt" class="cta-button">Jetzt Kontakt aufnehmen</a>
-  </section>
-
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <form action="https://formsubmit.co/sanitaermamic@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">E-Mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Nachricht:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit" class="cta-button">Nachricht senden</button>
-    </form>
-  </section>
-
-  <section id="standort">
-    <h2>Unser Standort</h2>
-    <p>Finden Sie uns hier:</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.3684443454794!2d7.6236250796181375!3d49.21838052886192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47967ba3b6beedc5%3A0xe1fe8d7981aab1dc!2sAm%20H%C3%A4usel%20122%2C%2066953%20Pirmasens!5e0!3m2!1sde!2sde!4v1745437515802!5m2!1sde!2sde" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-
-  
-  <footer>
-    <p>&copy; 2025 Meisterbetrieb Tomislav Mamić - Alle Rechte vorbehalten.</p>
   </footer>
+
 </body>
 </html>
